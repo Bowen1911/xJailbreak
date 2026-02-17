@@ -59,7 +59,7 @@ We recommend that you modify the `--cuda` parameters and set them to the GPU num
 Now you can execute attack, run:
 
 ``````shell
-python text.py --special_place "test/" -w 1 --cuda 0 --target "qwen" --weight_path "{your rl-agent model file, such as "log/train/ckpt/42_PPO_linux.pt"}"
+python test.py --special_place "test/" -w 1 --cuda 0 --target "qwen" --weight_path "{your rl-agent model file, such as "log/train/ckpt/42_PPO_linux.pt"}"
 ``````
 
 We also recommend that you modify the `--cuda` parameter. After the attack is completed, the statistical results are in `log/test`.
