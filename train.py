@@ -47,7 +47,7 @@ train_kwargs['val_max_step'] = 10  # How many times to iterate when verifying ea
 # * ------ Model ------
 # Helper models must be able to override safety instructions
 helpLLM = Llm_manager({
-    'model_path': 'your_path.../Llama3-8B-Instruct-JB/',
+    'model_path': 'your_path.../Llama3-8B-Instruct-JB',  #! DO NOT end with a "/"
     'source': 'local',
     'cuda': args.cuda
      })
@@ -62,7 +62,7 @@ env_kwargs['benign_emb_refer'] = torch.load('data/preload/benign_emb_refer.pt').
 
 # VictimLLM must be safety aligned
 victimLLM = Llm_manager({
-    'model_path': 'your_path.../Qwen2.5-7B-Instruct/',
+    'model_path': 'your_path.../Qwen2.5-7B-Instruct',  #! DO NOT end with a "/"
     'source': 'local',
     'cuda': args.cuda
     })
